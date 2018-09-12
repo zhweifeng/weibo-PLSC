@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"/>
+
+<head>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #triggerDelete {
+            width: 150px;
+        }
+
+        #postDelete {
+            width: 150px;
+        }
+
+        .weiboLists {
+            width: 700px
+        }
+
+        #weiboList {
+            list-style-type: none;
+        }
+
+        li{
+            float: left;
+        }
+        li div{
+            float: right;
+            width: 640px;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <label>已删除<span id="triggerDeleteCount">0</span>条</label>
+</div>
+<div>
+    <button id="triggerDelete">触发点击事件删除(慢)</button>
+</div>
+
+<div class="weiboLists">
+    <ol id="weiboList"></ol>
+</div>
+
+<div class="weiboLists">
+    <label>全选</label>
+    <input type="checkbox" id="selectAll"/>
+</div>
+
+<div>
+    <label>已删除<span id="postDeleteCount">0</span>条</label>
+</div>
+<div>
+    <button id="postDelete">调用接口删除(快)</button>
+</div>
+<script src="popup.js"></script>
+</body>
+
+</html>
